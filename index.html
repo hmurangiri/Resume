@@ -1,319 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Henry Murangiri | Resume</title>
-  <meta name="description" content="Resume of Henry Murangiri, Senior Technical Specialist focused on platforms, data, engineering, full-stack development, SaaS systems, and founder-led product building." />
-  <meta name="author" content="Henry Murangiri" />
-  <meta property="og:title" content="Henry Murangiri | Resume" />
-  <meta property="og:description" content="Senior Technical Specialist | Platforms, Data & Engineering | Full-Stack Builder | Founder" />
-  <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Scientist Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://www.skillswing.com/projects/css/styles.css" rel="stylesheet">
+    <style>
+        .resumeHeader {
+            font-weight: bold;
+        }
+
+        .skill-bars .bar {
+            margin: 20px 0;
+        }
+
+        .skill-bars .bar .progress-line {
+            height: 10px;
+            width: 100%;
+            background: #f0f0f0;
+            position: relative;
+            transform: scaleX(0);
+            transform-origin: left;
+            border-radius: 10px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+                0 1px rgba(255, 255, 255, 0.8);
+            animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        }
+
+        @keyframes animate {
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        .bar .progress-line span {
+            height: 100%;
+            position: absolute;
+            border-radius: 10px;
+            transform: scaleX(0);
+            transform-origin: left;
+            background: #6665ee;
+            animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        }
+
+        .bar .progress-line.html span {
+            width: 90%;
+        }
+
+        .bar .progress-line.css span {
+            width: 80%;
+        }
+
+        .bar .progress-line.jquery span {
+            width: 80%;
+        }
+
+        .bar .progress-line.python span {
+            width: 70%;
+        }
+
+        .bar .progress-line.mysql span {
+            width: 80%;
+        }
+
+        .bar .progress-line.php span {
+            width: 70%;
+        }
+
+        .bar .progress-line.mssql span {
+            width: 85%;
+        }
+
+        .bar .progress-line.java span {
+            width: 70%;
+        }
+
+        .bar .progress-line.bootstrap span {
+            width: 80%;
+        }
+
+        @keyframes showText2 {
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <nav class="nav-wrap" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Henry Murangiri Resume">
-        <span>Henry Murangiri</span>
-        <small>Resume</small>
-      </a>
+    <div class="container">
+        <div class="container">
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" />
-      <label for="nav-toggle" class="nav-button" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+            <div class="row">
+                <div class="container profile-section">
+                    <img src="profile.jpg"
+                        class="img-fluid rounded-circle profile-img" alt="Your Name">
+                    <h1>Henry Murangiri</h1>
+                    <p>Data Scientist</p>
+                    <div class="home-social-icons">
+                        <a href="https://www.linkedin.com/in/henry-murangiri-2847bb15b/" target="_blank"><i
+                                class="fab fa-linkedin"></i>Linkedin</a>
+                        <a href="https://github.com/hmurangiri" target="_blank"><i class="fab fa-github"></i>Github</a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
 
-      <div class="nav-links">
-        <a href="#summary">Summary</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#founder">Founder Work</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
 
-  <main class="page" id="main">
-    <section class="hero" id="top">
-      <p class="eyebrow">Online Resume</p>
-      <h1>Senior Technical Specialist building stable, automated, and scalable business systems.</h1>
-      <p class="hero-copy">
-        I work across platforms, data systems, software development, SaaS operations, and product delivery.
-        My strength is turning complex technical problems into reliable, documented, and scalable solutions.
-      </p>
-
-      <div class="hero-actions">
-        <a class="button primary" href="https://www.linkedin.com/in/henrymurangiri/" target="_blank" rel="noopener">View LinkedIn</a>
-        <a class="button secondary" href="mailto:henrymurangiri@gmail.com">Email Me</a>
-      </div>
-
-      <div class="hero-stats" aria-label="Career highlights">
-        <article>
-          <strong>9+ yrs</strong>
-          <span>Technical systems, consulting & delivery</span>
-        </article>
-        <article>
-          <strong>Full-stack</strong>
-          <span>Frontend, backend, automation & product builds</span>
-        </article>
-        <article>
-          <strong>Founder</strong>
-          <span>Built QR Flex into a functional dynamic QR company</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="summary">
-      <div class="section-heading">
-        <p>Profile</p>
-        <h2>Professional Summary</h2>
-      </div>
-      <div class="section-card">
-        <p>
-          Results-driven technical professional with experience spanning software testing, technical consulting,
-          data systems, platform reliability, automation, and product development. Skilled at bridging business needs
-          with technical execution, supporting complex implementations, building internal tools, improving system reliability,
-          and mentoring teams. Founder of QR Flex and Co-Founder of Blockwisely, combining engineering execution with product strategy,
-          content, and business development.
-        </p>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="section-heading">
-        <p>Capabilities</p>
-        <h2>Core Skills & Technical Competencies</h2>
-      </div>
-
-      <div class="skill-tags">
-        <span>Platform Engineering</span>
-        <span>Data Systems</span>
-        <span>SQL Server</span>
-        <span>Python</span>
-        <span>PHP</span>
-        <span>JavaScript</span>
-        <span>React</span>
-        <span>WordPress</span>
-        <span>Excel Automation</span>
-        <span>Jira</span>
-        <span>Confluence</span>
-        <span>SaaS</span>
-        <span>SSO</span>
-        <span>Root Cause Analysis</span>
-      </div>
-
-      <div class="competency-grid">
-        <article>
-          <h3>Platforms & Systems</h3>
-          <p>SaaS environments, cloud applications, upgrades, migrations, SSO, access controls, operational support, and technical documentation.</p>
-        </article>
-        <article>
-          <h3>Data & Automation</h3>
-          <p>Microsoft SQL Server, Excel, VBA, reporting automation, database validation, data comparison, dashboards, and analytics workflows.</p>
-        </article>
-        <article>
-          <h3>Development</h3>
-          <p>Python, PHP, JavaScript, React, Java, HTML, CSS, Bootstrap, WordPress, backend logic, frontend interfaces, and product builds.</p>
-        </article>
-        <article>
-          <h3>Leadership</h3>
-          <p>Mentorship, team coordination, client consulting, stakeholder communication, product planning, and founder-led execution.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <p>Experience</p>
-        <h2>Professional Experience</h2>
-      </div>
-
-      <article class="role-card">
-        <div class="role-top">
-          <div>
-            <h3>Senior Technical Specialist | Platforms, Data & Engineering</h3>
-            <p>Pacera · Full-time · Remote</p>
-          </div>
-          <span>Aug 2025 – Present</span>
+            <!-- Rest of the content -->
         </div>
-        <ul>
-          <li>Serve as the final escalation point for complex technical challenges across applications, data platforms, infrastructure, and networks.</li>
-          <li>Lead root cause analysis for recurring and high-impact incidents, implementing long-term preventive solutions.</li>
-          <li>Support system upgrades, cloud and platform migrations, and technical modernization initiatives.</li>
-          <li>Collaborate with developers, data teams, administrators, and infrastructure teams to design resilient production-ready systems.</li>
-          <li>Produce clear technical documentation, incident reports, operational runbooks, and knowledge resources.</li>
-          <li>Provide mentorship to L1/L2 teams, improving support quality, resolution speed, and operational consistency.</li>
-        </ul>
-      </article>
 
-      <article class="role-card">
-        <div class="role-top">
-          <div>
-            <h3>Senior Technical Consultant</h3>
-            <p>AARO Systems · Full-time · Hybrid</p>
-          </div>
-          <span>Jan 2022 – Jul 2025</span>
-        </div>
-        <ul>
-          <li>Acted as a senior technical lead for complex system implementations, data solutions, and client-facing technical delivery.</li>
-          <li>Designed and deployed an Excel-based time and billing tool, reducing reporting errors and improving accuracy.</li>
-          <li>Developed database comparison tools and IFRS9/IFRS17 reporting tools to support financial reporting and compliance.</li>
-          <li>Led and supported end-to-end client solution implementations, ensuring smooth deployment, configuration, and adoption.</li>
-          <li>Managed Jira and Confluence environments, including dashboards, queries, documentation, and workflow improvements.</li>
-        </ul>
-      </article>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <section id="portfolio">
 
-      <article class="role-card">
-        <div class="role-top">
-          <div>
-            <h3>Technical Consultant</h3>
-            <p>AARO Systems · Full-time · Remote</p>
-          </div>
-          <span>Jan 2021 – Dec 2021</span>
-        </div>
-        <ul>
-          <li>Delivered technical support and implementation services for enterprise systems and cloud applications.</li>
-          <li>Built VBA automation and client-specific solutions using Google Web Toolkit, Pascal, and Delphi.</li>
-          <li>Managed Microsoft SQL Server databases and supported clients through remote troubleshooting and configuration.</li>
-          <li>Improved workflows through Jira administration, JQL queries, dashboards, and process documentation.</li>
-        </ul>
-      </article>
+                <p class="resumeHeader">PROFESSIONAL SUMMARY</p>
+                <p>I am a results-driven aerospace engineering graduate with 6 years of technical consulting experience
+                    at Aaro Systems. Expertise in SAAS systems, database management, software testing, and
+                    troubleshooting. Adept at developing Excel VBA solutions. Skilled in data analysis with proficiency
+                    in React, Excel, Matlab, SQL, and Python. I am eager to leverage engineering background and
+                    mathematical skills as a data analyst.</p>
+                <p>&nbsp;</p>
 
-      <article class="role-card">
-        <div class="role-top">
-          <div>
-            <h3>Junior Technical Consultant</h3>
-            <p>AARO Systems · Full-time · Hybrid</p>
-          </div>
-          <span>Jan 2019 – Dec 2020</span>
-        </div>
-        <ul>
-          <li>Supported enterprise systems and client environments by troubleshooting technical issues and analyzing system behavior.</li>
-          <li>Installed, customized, and maintained cloud applications for client operations.</li>
-          <li>Worked with databases, Excel, reporting processes, and client-specific technical workflows.</li>
-        </ul>
-      </article>
+                <p class="resumeHeader">PROFESSIONAL EXPERIENCE</p>
+                <p>Technical Consultant | Aaro Systems | 7 Years</p>
+                <ul>
+                    <li>Led SAAS system implementation projects, collaborating with cross-functional teams to optimize
+                        workflow efficiency.</li>
+                    <li>Performed exhaustive database testing under varying loads to validate performance, ensuring
+                        optimal user experiences.</li>
+                    <li>Successfully implemented cloud applications, including meticulous installation and robust
+                        functionality.</li>
+                    <li>Administered Microsoft SQL databases, upholding data integrity and facilitating smooth
+                        operations.</li>
+                    <li>Designed and executed comprehensive software testing procedures, resulting in a 25% reduction in
+                        system errors.</li>
+                    <li>Developed Excel VBA solutions that streamlined data analysis and reporting processes, increasing
+                        productivity by 30%.</li>
+                    <li>Provided expert troubleshooting for complex technical issues, resolving critical system
+                        disruptions promptly.</li>
+                    <li>Engineered a sophisticated database comparison tool instrumental in ensuring data consistency
+                        during system upgrades, underscoring commitment to quality assurance.</li>
+                    <li>Conceptualized and developed an advanced Excel-based time analysis tool, employing intricate
+                        formulas, pivot tables, and macros to facilitate comprehensive employee time analysis and
+                        billing validation.</li>
+                    <li>Pioneered test automation strategies, driving efficiency and precision in quality assurance
+                        processes.</li>
+                    <li>Spearheaded data entry and conducted intricate financial analysis using Microsoft Excel,
+                        producing comprehensive insights for strategic decision-making.</li>
+                    <li>Actively contributed to Java development projects, playing a pivotal role in project milestones.
+                    </li>
+                </ul>
+                <p>&nbsp;</p>
 
-      <article class="role-card">
-        <div class="role-top">
-          <div>
-            <h3>Software Tester</h3>
-            <p>AARO Systems · Part-time · Hybrid</p>
-          </div>
-          <span>Jan 2016 – Dec 2018</span>
-        </div>
-        <ul>
-          <li>Designed and executed test cases for web and data-driven applications, ensuring accuracy of business logic and data outputs.</li>
-          <li>Conducted regression, functional, load, and user acceptance testing across releases.</li>
-          <li>Validated data integrity across SQL, Excel, and JSON/XML structures.</li>
-          <li>Created detailed test documentation and reports using Confluence.</li>
-        </ul>
-      </article>
-    </section>
+                <p class="resumeHeader">SKILLS</p>
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
 
-    <section class="section" id="founder">
-      <div class="section-heading">
-        <p>Founder Work</p>
-        <h2>Founder & Product Experience</h2>
-      </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
 
-      <article class="role-card founder-card">
-        <div class="role-top">
-          <div>
-            <h3>Founder</h3>
-            <p>QR Flex · Self-employed · Remote</p>
-          </div>
-          <span>Jun 2026 – Present</span>
-        </div>
-        <ul>
-          <li>Founded and built QR Flex from scratch into a fully functional dynamic QR code solutions company.</li>
-          <li>Designed and coded both the frontend and backend of the platform.</li>
-          <li>Developed dynamic QR features that allow businesses to update content without reprinting QR codes.</li>
-          <li>Built solutions for restaurants, events, organizations, and small businesses, including digital menus, contact QR pages, and analytics.</li>
-          <li>Led product planning, feature development, testing, branding, and go-to-market preparation.</li>
-          <li>Built and coordinated a team to support product development, sales, operations, and business growth.</li>
-        </ul>
-      </article>
+                    <div class="bar">
+                        <div class="info">
+                            <span>jQuery</span>
+                        </div>
+                        <div class="progress-line jquery">
+                            <span></span>
+                        </div>
+                    </div>
 
-      <article class="role-card founder-card">
-        <div class="role-top">
-          <div>
-            <h3>Co-Founder</h3>
-            <p>Blockwisely · Self-employed · Hybrid</p>
-          </div>
-          <span>Aug 2025 – Present</span>
-        </div>
-        <ul>
-          <li>Co-founded a crypto and blockchain education platform focused on accessible Web3 news, analysis, and beginner-friendly explainers.</li>
-          <li>Support content strategy, WordPress development, SEO optimization, and coverage of African crypto trends.</li>
-          <li>Translate complex blockchain, stablecoin, regulation, and exchange topics into simple educational content for wider audiences.</li>
-        </ul>
-      </article>
-    </section>
+                    <div class="bar">
+                        <div class="info">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+                    </div>
 
-    <section class="section" id="certifications">
-      <div class="section-heading">
-        <p>Learning</p>
-        <h2>Licenses & Certifications</h2>
-      </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>MSSQL</span>
+                        </div>
+                        <div class="progress-line mssql">
+                            <span></span>
+                        </div>
+                    </div>
 
-      <div class="list-grid">
-        <article>AI Fluency Framework & Foundations</article>
-        <article>Programming with Python Professional Certificate</article>
-        <article>Advanced SQL: Window Functions</article>
-        <article>From Excel to SQL</article>
-        <article>React: Creating and Hosting a Full-Stack Site</article>
-        <article>Python Essential Training</article>
-        <article>Prioritizing Your Tasks</article>
-      </div>
-    </section>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div>
 
-    <section class="section" id="education">
-      <div class="section-heading">
-        <p>Education</p>
-        <h2>Education</h2>
-      </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>PHP</span>
+                        </div>
+                        <div class="progress-line php">
+                            <span></span>
+                        </div>
+                    </div>
 
-      <div class="list-grid education-grid">
-        <article>
-          <strong>B.Sc. Aerospace Engineering</strong>
-          <span>Kenyatta University · Dec 2022</span>
-        </article>
-        <article>
-          <strong>Certificate in Leadership</strong>
-          <span>Kenyatta University · Dec 2022</span>
-        </article>
-        <article>
-          <strong>KCSE Certificate</strong>
-          <span>Igoji Boys Secondary School · Dec 2013</span>
-        </article>
-      </div>
-    </section>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="progress-line bootstrap">
+                            <span></span>
+                        </div>
+                    </div>
 
-    <section class="section contact-section" id="contact">
-      <div class="section-heading">
-        <p>Contact</p>
-        <h2>Get in Touch</h2>
-      </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="contact-card">
-        <div>
-          <h3>Henry Murangiri</h3>
-          <p>Senior Technical Specialist | Platforms, Data & Engineering</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary dark" href="mailto:henrymurangiri@gmail.com">Email Me</a>
-          <a class="button outline" href="https://www.linkedin.com/in/henrymurangiri/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-    </section>
-  </main>
+                <p>&nbsp;</p>
+
+                <p class="resumeHeader">MY PROJECTS</p>
+                <div class="row">
+
+                    <!-- Repeat for other projects -->
+                    <div class="col-md-4">
+                        <div class="home-card card">
+                            <!--<img class="card-img-top" src="path_to_project_image.jpg" alt="Project 1">-->
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Dynamic QR Code Solution</p>
+                                <a href="https://qr-flex.com"
+                                    class="btn btn-primary project-button" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for other projects -->
+                    <div class="col-md-4">
+                        <div class="home-card card">
+                            <!--<img class="card-img-top" src="path_to_project_image.jpg" alt="Project 1">-->
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">Excel Blog</p>
+                                <a href="https://queryfun.com"
+                                    class="btn btn-primary project-button" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
